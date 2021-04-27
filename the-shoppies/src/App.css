@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,63 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+
+
+
+
+body {
+  background-color: #FBF7ED;
+  color: #004C3F;
 }
+
+h1, h4 {
+  padding-left: 20px;
+}
+
+input[type=text] {
+  width: 90%;
+  height: 35px;
+  /* margin-left: 20px; */
+  text-indent: 30px;
+  color: #212326;
+  font-size: 1em;
+  box-shadow: 0 0 0 1px #6b7177;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #ffffff;
+  transition: padding 150ms;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.noms-header {
+  background-color: #004C3F;
+  color: #FBF7ED;
+  padding: 5px 5px 5px 0px;
+}
+
+.search-bar {
+  position: relative;
+  width: 100%;
+  text-align:center;
+}
+
+.search-bar span {
+  position: absolute;
+  left: 2px;
+  margin-left: 20px;
+  padding-top: 7px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.wrapper span {
+  position: absolute;
+  left: 2px;
+}
+
