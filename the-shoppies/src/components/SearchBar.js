@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SearchResultMobile from './SearchResultMobile';
+import SearchResult from './SearchResult';
 
 function SearchBar(props) {
   const [query, setQuery] = useState("");
@@ -46,15 +46,17 @@ function SearchBar(props) {
   }
 
   return (
-    <div>
+    <div >
         <div className="search-bar">
           <input onKeyPress={searchBarOnChange} type="text" name="search" placeholder="Enter a movie title"></input>
           <span className="material-icons md-dark">search</span>
         </div>
-        {query === "" ? <div></div> : <div><h4>Search results for "{query}"</h4></div> }
-        {searchResults.map(function(o, i) {
-          return <SearchResultMobile nominations={props.nominations} onNominated={props.onNominated} title={o.title} year={o.year} key={i}/>
-        })}
+        <div className="search-results-container">
+          {query === "" ? <div></div> : <div><h4>Search results for "{query}"</h4></div> }
+          {searchResults.map(function(o, i) {
+            return <SearchResult nominations={props.nominations} onNominated={props.onNominated} title={o.title} year={o.year} key={i}/>
+          })}
+        </div>
     </div>
   );
 }

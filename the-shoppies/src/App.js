@@ -5,7 +5,7 @@ import NominationListItem from './components/NominationListItem';
 import './App.css';
 
 function App() {
-  const [nominations, setNominations] = useState([{title: "Legally Blonde", year: "2001"}, {title: "fhfhwjekfhwkje;fhwjekfhwkje;fhwjekfhwkje;wjekfhwkje;fhwjekfhwkje;fnksdjebfjwefuwqufisdufhdjksfnjdfndsjknfjsd", year: "1999"}]);
+  const [nominations, setNominations] = useState([{title: "Legally Blonde", year: "2001"}, {title: "fhfhwjekfhwk je;fhwjekf hwkje;fhw jekfhwkj e;wjekf hwkje;f hw jekfhwkje;f nksdj ebfjw efuwquf isd uf hdjksf njdfnds jknfjsd", year: "1999"}]);
 
   function deleteNomination(title, year) {
     var indexToDelete = -1;
@@ -31,14 +31,14 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="app">
       <div className="noms-header mobile">
         <h1>Nominations</h1>
         {nominations.map(function(o, i) {
           return <NominationListItem deleteNomination={deleteNomination} title={o.title} year={o.year} key={i}/>
         })}
       </div>
-      <div className="">
+      <div className="main-content">
         <h1>The Shoppies</h1>
         <SearchBar nominations={nominations} onNominated={onNominated}/>
       </div>
