@@ -1,47 +1,3 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-
-
-
-
-
 body {
   background-color: #FBF7ED;
   color: #004C3F;
@@ -135,4 +91,33 @@ span {
   margin-top: 5px;
   margin-left: 5px;
   margin-right: 40px;
+}
+
+.nominations-year-mobile {
+  color: #FBF7ED;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 40px;
+}
+
+.nominations-list-mobile {
+  width: 90%;
+  height: 35px;
+  margin: 0px 20px 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: padding 150ms;
+  -webkit-appearance: none;
+  appearance: none;
+  display: flex;
+}
+
+.nominations-list-mobile p {
+  width: 80%;
+  position: absolute;
+  margin-left: 35px;
+  margin-top: 2px;
+  white-space: initial;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
 }

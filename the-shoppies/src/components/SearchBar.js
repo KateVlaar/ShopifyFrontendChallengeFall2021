@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import SearchResultMobile from './SearchResultMobile';
 
-function SearchBar() {
+function SearchBar(props) {
   const [query, setQuery] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   
@@ -53,7 +53,7 @@ function SearchBar() {
         </div>
         {query === "" ? <div></div> : <div><h4>Search results for "{query}"</h4></div> }
         {searchResults.map(function(o, i) {
-          return <SearchResultMobile title={o.title} year={o.year} key={i}/>
+          return <SearchResultMobile nominations={props.nominations} onNominated={props.onNominated} title={o.title} year={o.year} key={i}/>
         })}
     </div>
   );
