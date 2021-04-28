@@ -145,6 +145,7 @@ span {
 
 .search-results-container {
   overflow-y: scroll;
+  position: relative;
   height: calc(100vh - 200px);
 }
 
@@ -169,6 +170,7 @@ span {
   background-color: #008060;
 }
 
+/* Snackbar https://www.w3schools.com/howto/howto_js_snackbar.asp */
 #noms-done-snackbar {
   display: flex;
   visibility: hidden;
@@ -210,6 +212,50 @@ span {
 @keyframes fadeout {
   from {bottom: 30px; opacity: 1;}
   to {bottom: 0; opacity: 0;}
+}
+
+/* Loader indicator https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader5 */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  margin: -76px 0 0 -76px;
+  border: 8px solid #008060;
+  border-radius: 50%;
+  border-top: 8px solid #004C3F;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
 }
 
 @media only screen and (min-width: 768px) {
@@ -350,7 +396,6 @@ span {
     margin-left: 35px;
     margin-top: 2px;
     overflow-wrap: normal;
-    white-space: nowrap;
   }
 
   .search-result-mobile {
@@ -380,4 +425,6 @@ span {
     margin-right: 10px;
     white-space: nowrap;
   }
+
+  
 }

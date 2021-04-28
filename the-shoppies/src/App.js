@@ -5,7 +5,7 @@ import NominationListItem from './components/NominationListItem';
 import './App.css';
 
 function App() {
-  const [nominations, setNominations] = useState([{title: "Legally Blonde", year: "2001"}, {title: "fhfhwjekfhwk je;fhwjekf hwkje;fhw jekfhwkj e;wjekf hwkje;f hw jekfhwkje;f nksdj ebfjw efuwquf isd uf hdjksf njdfnds jknfjsd", year: "1999"}]);
+  const [nominations, setNominations] = useState([]);
   const NUM_TOTAL_NOMINATIONS = 5;
 
   // https://www.w3schools.com/howto/howto_js_snackbar.asp
