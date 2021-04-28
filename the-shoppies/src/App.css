@@ -91,7 +91,7 @@ span {
 
 .search-result-mobile span {
   position: inherit;
-  right: 30px;
+  margin-right: 10px;
   margin-top: 5px;
 }
 
@@ -110,7 +110,8 @@ span {
   color: #004C3F;
   margin-top: 5px;
   margin-left: 5px;
-  margin-right: 40px;
+  margin-right: 10px;
+  white-space: nowrap;
 }
 
 .nominations-year-mobile {
@@ -144,7 +145,7 @@ span {
 
 .search-results-container {
   overflow-y: scroll;
-  height: 500px;
+  height: calc(100vh - 200px);
 }
 
 .nominate-button {
@@ -166,6 +167,49 @@ span {
 .nominate-button:disabled {
   cursor: default;
   background-color: #008060;
+}
+
+#noms-done-snackbar {
+  display: flex;
+  visibility: hidden;
+  min-width: 250px; 
+  margin-left: -125px;
+  background-color: #004C3F;
+  color: #FBF7ED;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-weight: bold;
+}
+
+#noms-done-snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
 }
 
 @media only screen and (min-width: 768px) {
@@ -213,8 +257,8 @@ span {
 
   .search-result-mobile span {
     position: inherit;
-    right: 4.5%;
     margin-top: 5px;
+    margin-right: 10px;
   }
   
   .movie-title-mobile {
@@ -232,7 +276,8 @@ span {
     color: #004C3F;
     margin-top: 5px;
     margin-left: 5px;
-    margin-right: 40px;
+    margin-right: 10px;
+    white-space: nowrap;
   }
 }
 
@@ -268,6 +313,11 @@ span {
   .app {
     display: flex;
     height: 100%;
+    width: 100%;;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
   }
   
   .noms-header {
@@ -287,10 +337,11 @@ span {
   .main-content {
     width: 100%;
     margin-top: 50px;
-  }
-  .full-height {
-    height: 100%;
-    background: yellow;
+    flex-grow: 1;
+  
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
   }
 
   .nominations-list-mobile p {
@@ -327,5 +378,6 @@ span {
     margin-top: 5px;
     margin-left: 5px;
     margin-right: 10px;
+    white-space: nowrap;
   }
 }

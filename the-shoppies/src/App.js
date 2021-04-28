@@ -6,6 +6,14 @@ import './App.css';
 
 function App() {
   const [nominations, setNominations] = useState([{title: "Legally Blonde", year: "2001"}, {title: "fhfhwjekfhwk je;fhwjekf hwkje;fhw jekfhwkj e;wjekf hwkje;f hw jekfhwkje;f nksdj ebfjw efuwquf isd uf hdjksf njdfnds jknfjsd", year: "1999"}]);
+  const NUM_TOTAL_NOMINATIONS = 5;
+
+  // https://www.w3schools.com/howto/howto_js_snackbar.asp
+  function showSnackbar() {
+    var snackbar = document.getElementById("noms-done-snackbar");
+    snackbar.className = "show";
+    setTimeout(function(){ snackbar.className = snackbar.className.replace("show", ""); }, 3000);
+  }
 
   function deleteNomination(title, year) {
     var indexToDelete = -1;
@@ -21,12 +29,16 @@ function App() {
 
   function onNominated(title, year) {
     const newNominations = [...nominations];
-    if (newNominations.length < 5) {
+    if (newNominations.length < NUM_TOTAL_NOMINATIONS) {
       newNominations.push({
         title: title,
         year: year
       });
       setNominations(newNominations);
+    }
+
+    if (newNominations.length === NUM_TOTAL_NOMINATIONS) {
+      showSnackbar();
     }
   }
 
@@ -42,6 +54,10 @@ function App() {
         <h1>The Shoppies</h1>
         <SearchBar nominations={nominations} onNominated={onNominated}/>
       </div>
+      <div id="noms-done-snackbar">
+        <span className="material-icons">done&nbsp;</span>
+        Successfully nominated 5 films
+    </div>
     </div>
   );
 }
