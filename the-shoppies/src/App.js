@@ -44,7 +44,7 @@ function App() {
 
   return (
     <div className="app">
-      <div className="noms-header mobile">
+      <div className="noms-header">
         <h1>Nominations</h1>
         {nominations.map(function(o, i) {
           return <NominationListItem deleteNomination={deleteNomination} title={o.title} year={o.year} key={i}/>

@@ -74,7 +74,7 @@ span {
   left: 2px;
 }
 
-.search-result-mobile {
+.search-result {
   width: 90%;
   height: 35px;
   margin: 20px 20px 0px 20px;
@@ -89,13 +89,13 @@ span {
   display: flex;
 }
 
-.search-result-mobile span {
+.search-result span {
   position: inherit;
   margin-right: 10px;
   margin-top: 5px;
 }
 
-.movie-title-mobile {
+.movie-title {
   color: #004C3F;
   margin-top: 5px;
   margin-left: 5px;
@@ -106,7 +106,7 @@ span {
   text-overflow: ellipsis;
 }
 
-.movie-year-mobile {
+.movie-year {
   color: #004C3F;
   margin-top: 5px;
   margin-left: 5px;
@@ -114,14 +114,14 @@ span {
   white-space: nowrap;
 }
 
-.nominations-year-mobile {
+.nominations-year {
   color: #FBF7ED;
   margin-top: 5px;
   margin-left: 5px;
   margin-right: 40px;
 }
 
-.nominations-list-mobile {
+.nominations-list {
   width: 90%;
   height: 35px;
   margin: 0px 20px 10px 20px;
@@ -133,7 +133,7 @@ span {
   display: flex;
 }
 
-.nominations-list-mobile p {
+.nominations-list p {
   width: 80%;
   position: absolute;
   margin-left: 35px;
@@ -287,7 +287,7 @@ span {
     padding-top: 27px;
   }
   
-  .search-result-mobile {
+  .search-result {
     width: 95%;
     height: 35px;
     margin: 20px 20px 0px 20px;
@@ -301,13 +301,13 @@ span {
     appearance: none;
   }
 
-  .search-result-mobile span {
+  .search-result span {
     position: inherit;
     margin-top: 5px;
     margin-right: 10px;
   }
   
-  .movie-title-mobile {
+  .movie-title {
     color: #004C3F;
     margin-top: 5px;
     margin-left: 10px;
@@ -318,7 +318,7 @@ span {
     text-overflow: ellipsis;
   }
   
-  .movie-year-mobile {
+  .movie-year {
     color: #004C3F;
     margin-top: 5px;
     margin-left: 5px;
@@ -390,7 +390,7 @@ span {
     min-height: 0;
   }
 
-  .nominations-list-mobile p {
+  .nominations-list p {
     width: 20%;
     position: absolute;
     margin-left: 35px;
@@ -398,7 +398,7 @@ span {
     overflow-wrap: normal;
   }
 
-  .search-result-mobile {
+  .search-result {
     width: 93%;
     height: 35px;
     margin: 20px 40px 20px 40px;
@@ -412,13 +412,13 @@ span {
     appearance: none;
   }
 
-  .search-result-mobile span {
+  .search-result span {
     position: inherit;
     margin-top: 0px;
     margin-right: 10px;
   }
 
-  .movie-year-mobile {
+  .movie-year {
     color: #004C3F;
     margin-top: 5px;
     margin-left: 5px;

@@ -6,9 +6,9 @@ function NominationListItem(props) {
   }
 
   return (
-    <div className="nominations-list-mobile">
+    <div className="nominations-list">
         <span onClick={deleteNomination} className="material-icons">remove_circle</span>
-        <p className="nominations-title-mobile"><b>{props.title}</b> ({props.year}) </p>
+        <p className="nominations-title"><b>{props.title}</b> ({props.year}) </p>
     </div>
   );
 }

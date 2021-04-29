@@ -20,12 +20,14 @@ function SearchBar(props) {
     var searchResultsArray = [];
 
     const axios = require('axios');
+    const OMDB_REQUEST = `https://www.omdbapi.com/?s=${query}&type=movie&apikey=${process.env.REACT_APP_OMDB_API_KEY}&page=${pageNumber}`;
 
-    var response = await axios(`http://www.omdbapi.com/?s=${query}&type=movie&apikey=${process.env.REACT_APP_OMDB_API_KEY}&page=${pageNumber}`);
+    var response = await axios(OMDB_REQUEST);
     var totalSearchResults = response.data.totalResults;
 
     if (response.data.Response === "False") {
       setErrorGettingResults(true);
+      return;
     }
 
     while (totalSearchResults > 0) {
@@ -41,8 +43,7 @@ function SearchBar(props) {
       pageNumber += 1;
         
       console.log(searchResultsArray);
-      response = await axios(`http://www.omdbapi.com/?s=${query}&apikey=${process.env.REACT_APP_OMDB_API_KEY}&page=${pageNumber}`);
-
+      response = await axios(OMDB_REQUEST);
     }
     setSearchResults(searchResultsArray);
   }
