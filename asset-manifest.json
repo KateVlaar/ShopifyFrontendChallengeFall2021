@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/ShopifyFrontendChallengeFall2021/static/css/main.3eb8a37b.chunk.css",
-    "main.js": "/ShopifyFrontendChallengeFall2021/static/js/main.e9db9b5e.chunk.js",
-    "main.js.map": "/ShopifyFrontendChallengeFall2021/static/js/main.e9db9b5e.chunk.js.map",
+    "main.css": "/ShopifyFrontendChallengeFall2021/static/css/main.e1c040db.chunk.css",
+    "main.js": "/ShopifyFrontendChallengeFall2021/static/js/main.4ed26654.chunk.js",
+    "main.js.map": "/ShopifyFrontendChallengeFall2021/static/js/main.4ed26654.chunk.js.map",
     "runtime-main.js": "/ShopifyFrontendChallengeFall2021/static/js/runtime-main.b1e4ff8d.js",
     "runtime-main.js.map": "/ShopifyFrontendChallengeFall2021/static/js/runtime-main.b1e4ff8d.js.map",
     "static/js/2.2da88f31.chunk.js": "/ShopifyFrontendChallengeFall2021/static/js/2.2da88f31.chunk.js",
@@ -10,13 +10,14 @@
     "static/js/3.3af09ce8.chunk.js": "/ShopifyFrontendChallengeFall2021/static/js/3.3af09ce8.chunk.js",
     "static/js/3.3af09ce8.chunk.js.map": "/ShopifyFrontendChallengeFall2021/static/js/3.3af09ce8.chunk.js.map",
     "index.html": "/ShopifyFrontendChallengeFall2021/index.html",
-    "static/css/main.3eb8a37b.chunk.css.map": "/ShopifyFrontendChallengeFall2021/static/css/main.3eb8a37b.chunk.css.map",
-    "static/js/2.2da88f31.chunk.js.LICENSE.txt": "/ShopifyFrontendChallengeFall2021/static/js/2.2da88f31.chunk.js.LICENSE.txt"
+    "static/css/main.e1c040db.chunk.css.map": "/ShopifyFrontendChallengeFall2021/static/css/main.e1c040db.chunk.css.map",
+    "static/js/2.2da88f31.chunk.js.LICENSE.txt": "/ShopifyFrontendChallengeFall2021/static/js/2.2da88f31.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/ShopifyFrontendChallengeFall2021/static/media/shopify_logo.23779757.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.b1e4ff8d.js",
     "static/js/2.2da88f31.chunk.js",
-    "static/css/main.3eb8a37b.chunk.css",
-    "static/js/main.e9db9b5e.chunk.js"
+    "static/css/main.e1c040db.chunk.css",
+    "static/js/main.4ed26654.chunk.js"
   ]
 }
