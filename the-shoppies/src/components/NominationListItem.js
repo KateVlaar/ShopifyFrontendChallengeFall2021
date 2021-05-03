@@ -6,8 +6,8 @@ function NominationListItem(props) {
   }
 
   return (
-    <div className="nominations-list">
-        <span onClick={deleteNomination} className="material-icons">remove_circle</span>
+    <div className="nominations-list fade-in-animation">
+        <span onClick={deleteNomination} className="material-icons remove-button">remove_circle</span>
         <p className="nominations-title"><b>{props.title}</b> ({props.year}) </p>
     </div>
   );

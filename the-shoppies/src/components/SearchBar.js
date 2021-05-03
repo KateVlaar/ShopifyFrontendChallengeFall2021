@@ -23,6 +23,7 @@ function SearchBar(props) {
     const OMDB_REQUEST = `https://www.omdbapi.com/?s=${query}&type=movie&apikey=${process.env.REACT_APP_OMDB_API_KEY}&page=${pageNumber}`;
 
     var response = await axios(OMDB_REQUEST);
+    console.log(response);
     var totalSearchResults = response.data.totalResults;
 
     if (response.data.Response === "False") {

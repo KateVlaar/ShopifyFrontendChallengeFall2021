@@ -51,7 +51,11 @@ function App() {
         })}
       </div>
       <div className="main-content">
-        <h1>The Shoppies</h1>
+        <div className="shoppies-title">
+          <div className="shopify-logo"></div>
+           <h1 className="shoppies-title-text">the shoppies</h1>
+        </div>
+        <h4 className="shoppies-subtitle-text">Search for movie titles and select 5 nominations</h4>
         <SearchBar nominations={nominations} onNominated={onNominated}/>
       </div>
       <div id="noms-done-snackbar">
