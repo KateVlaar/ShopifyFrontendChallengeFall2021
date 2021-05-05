@@ -3,7 +3,6 @@ html, body {
   color: #004C3F;
   height: 100%;
   margin: 0;
-  overflow: hidden;
 }
 
 h1, h4 {
@@ -27,23 +26,6 @@ input[type=text] {
 
 span {
   display: inline;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #FBF7ED; 
-}
- 
-::-webkit-scrollbar-thumb {
-  background: #004C3F; 
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #008060; 
 }
 
 .noms-header {
@@ -215,7 +197,7 @@ span {
   padding: 16px;
   position: fixed;
   z-index: 1;
-  left: 50%;
+  left: 45%;
   bottom: 30px;
   font-weight: bold;
 }
@@ -249,7 +231,7 @@ span {
 /* Loader indicator https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader5 */
 #loader {
   position: absolute;
-  left: 50%;
+  left: 61%;
   top: 20%;
   z-index: 1;
   width: 50px;
@@ -306,6 +288,10 @@ span {
 }
 
 @media only screen and (min-width: 768px) {
+  html, body {
+      overflow: hidden;
+  }
+
   h1, h4 {
     padding-left: 30px;
   }
@@ -409,6 +395,23 @@ span {
 @media only screen and (min-width: 1024px) {
   h4 {
     padding-left: 40px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #FBF7ED; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #004C3F; 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #008060; 
   }
 
   input[type=text] {
@@ -530,5 +533,39 @@ span {
     background-image: url("shopify_logo.svg");
     margin-left: 40px;
     margin-top: 24px;
+  }
+
+  /* Loader indicator https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader5 */
+  #loader {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    margin: -76px 0 0 -76px;
+    border: 8px solid #008060;
+    border-radius: 50%;
+    border-top: 8px solid #004C3F;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+
+  /* Snackbar https://www.w3schools.com/howto/howto_js_snackbar.asp */
+  #noms-done-snackbar {
+    display: flex;
+    visibility: hidden;
+    min-width: 250px; 
+    margin-left: -125px;
+    background-color: #004C3F;
+    color: #FBF7ED;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-weight: bold;
   }
 }
